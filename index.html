@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Punt Trump Over The Wall</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Punt Trump Over The Wall</h1>
+    <p>Use the sliders below to adjust the force of the kick and angle of trajectory, then click "Punt!" to see if you can get Trump over the wall.</p>
+    <label for="force">Force:</label>
+    <input type="range" min="1" max="10" value="5" class="slider" id="force">
+    <span id="force-value">5</span>
+    <br>
+    <label for="angle">Angle:</label>
+    <input type="range" min="0" max="90" value="45" class="slider" id="angle">
+    <span id="angle-value">45</span>
+    <br>
+    <button id="punt-btn">Punt!</button>
+    <br>
+    <canvas id="canvas" width="600" height="400"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
