@@ -4,6 +4,7 @@ const ctx = canvas.getContext("2d");
 
 // Define the mini Trump image and initial position
 const trumpImage = new Image();
+trumpImage.src = "minitrump.png";
 trumpImage.onload = () => {
     let trumpX = 100;
     let trumpY = canvas.height - trumpImage.height;
@@ -56,4 +57,4 @@ trumpImage.onload = () => {
     // Add a click event listener to the punt button
     document.getElementById("punt-btn").addEventListener("click", punt);
 };
-trumpImage.src =
+trumpImage.src = "minitrump.png";
